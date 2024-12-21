@@ -1,6 +1,6 @@
 // Show & Hide  password
 const toggleBtn = document.querySelector(".show-btn");
-const passInput = document.querySelector(".");
+const passInput = document.querySelector(".user__input");
 
 toggleBtn.addEventListener("click", ()=>{
     if(passInput.type === "text"){
