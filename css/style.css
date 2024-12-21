@@ -29,6 +29,7 @@
   box-sizing: border-box;
   margin: 0;
   border: 0;
+  border-radius: 0;
   padding: 0;
   scroll-behavior: smooth;
   transition: all 0.25s ease-in-out;
