@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Sign in - chase.com</title>
+    <link rel="shortcut icon" href="./images/img-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <main class="main__container">
+       <div class="main__header-logo">
+        <img src="./images/img-top-logo.png" alt="" class="main__logo">
+       </div>
+       <div class="container">
+        <div class="form__wrapper">
+            <form class="form__container" action="">
+                <div class="error__mssg">
+                    <p class="user__error-mssg"><i class="fa-sharp fa-solid fa-circle-exclamation user-circle-exclamation"></i>Please tell us your username and <span>password.</span></p>
+                </div>
+                <div class="user__details">
+                    <label for="username" class="user__label">username</label>
+                    <input type="text" class="user__input"  name="username" id="username">
+                    <div class="err__mssg">
+                        <p class="user__error"><i class="fa-sharp fa-solid fa-circle-exclamation circle-exclamation"></i>Please tell us your username.</p>
+                    </div>
+                </div>
+                <div class="user__details">
+                    <label for="password" class="user__label">Password</label>
+                    <input type="password" class="user__input" name="password" id="password">
+                    <button type="button" class="show-btn">Show</button>
+                    <div class="err__mssg user__err">
+                        <p class="user__error"><i class="fa-sharp fa-solid fa-circle-exclamation circle-exclamation"></i>Please tell us your password.</p>
+                    </div>
+                </div>
+                <div class="user__checkbox">
+                    <div class="user__check">
+                        <input type="checkbox" name="checkbox" id="check">
+                        <label for="check" class="user__check-me">Remember me</label>
+                    </div>
+                    <div class="user__mark">
+                        <input type="checkbox" name="markbox" id="mark">
+                        <label for="mark" class="user__mark-option">Use token</label>
+                    </div>
+                </div>
+                <button type="submit" class="login-btn">Sign in</button>
+                <div class="user__links">
+                    <a href="" class="forgot__link">Forgot username/password? <i class="fa fa-angle-right link__icon"></i></a>
+                    <a href="" class="signup__link">Not Enrolled? Sign Up Now. <i class="fa fa-angle-right link__icon"></i></a>
+                </div>
+            </form>
+        </div>     
+       </div>      
+    </main>  
+</body>
+</html>
