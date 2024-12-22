@@ -137,6 +137,7 @@ img{
     border-bottom: 1px solid var(--input-text-color);
     outline: none;
     padding: 8px 0;
+    border-radius: 0;
     font-size: 1rem;
     transition: border-color 0.3s ease; 
 }
