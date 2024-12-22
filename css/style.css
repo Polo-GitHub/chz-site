@@ -292,7 +292,7 @@ img{
 /* Small Mobile (e.g., iPhone SE) */
 @media(max-width:320px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .user__check{
         gap: 0.2rem;
@@ -319,7 +319,7 @@ img{
 /* Mobile (e.g., iPhone 8) */
 @media (min-width:321px) and (max-width:375px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .user__check{
         gap: 0.2rem;
@@ -345,7 +345,7 @@ img{
 }
 @media (min-width:376px) and (max-width:414px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .footer__icon::after{
         width: 100%;
@@ -355,7 +355,7 @@ img{
 /* Small Tablet (e.g., iPad Mini) */
 @media (min-width:415px) and (max-width: 768px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .footer__icon::after{
         width: 80%;
@@ -365,7 +365,7 @@ img{
 /* Standard Tablet (e.g., iPad) */
 @media (min-width:769px) and (max-width:810px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .footer__icon::after{
         width: 80%;
@@ -375,7 +375,7 @@ img{
 /* Large Mobile (e.g., iPhone 16Pro Max) */
 @media only screen and (min-device-width: 430px) and (max-device-width: 450px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
     .footer__icon::after{
         width: 90%;
@@ -384,7 +384,7 @@ img{
 /* Large Tablet (e.g., iPad Pro) */
 @media (min-width:811px) and (max-width:1024px){
     .container{
-        padding: 2rem  0.6rem 2.8rem;
+        padding: 2rem  0.6rem 3rem;
     }
 
 }
