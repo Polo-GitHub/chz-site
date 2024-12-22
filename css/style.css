@@ -64,12 +64,12 @@ img{
     display: flex;
 }
 .main__logo{
-    margin: 25px auto 20px;
+    margin: 25px auto 0px;
     align-items: center;
     width: 170px;
 }
 .container{
-    padding-top: 4rem;
+    padding-top: 5.5rem;
     padding-bottom: 4rem;
 }
 .form__wrapper{
@@ -292,10 +292,13 @@ img{
 /* Small Mobile (e.g., iPhone SE) */
 @media(max-width:320px){
     .container{
-        padding-top: 1rem;
+        padding: 2rem  0.6rem 2.8rem;
     }
     .user__check{
-        gap: 0.5rem;
+        gap: 0.2rem;
+    }
+    .user__checkbox{
+        padding: 0.6375rem  0.1rem;
     }
     .user__check-me, .user__mark-option{
         font-size: 0.9rem; 
