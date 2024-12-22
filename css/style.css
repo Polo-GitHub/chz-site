@@ -316,4 +316,76 @@ img{
     }
   
 }
+/* Mobile (e.g., iPhone 8) */
+@media (min-width:321px) and (max-width:375px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+    .user__check{
+        gap: 0.2rem;
+    }
+    .user__checkbox{
+        padding: 0.6375rem  0.1rem;
+    }
+    .user__check-me, .user__mark-option{
+        font-size: 0.9rem; 
+    } 
+    .icon__text{
+        font-size: 1.120rem;
+    }
+    .social__icon{
+        display: flex;
+        gap: 1rem;
+        font-size: 1.3rem;
+    }
+    .footer__icon::after{
+        width: 100%;
+    }
+
+}
+@media (min-width:376px) and (max-width:414px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+    .footer__icon::after{
+        width: 100%;
+    }
+}
+/* Large Mobile (e.g., iPhone 12, Galaxy S20) */
+/* Small Tablet (e.g., iPad Mini) */
+@media (min-width:415px) and (max-width: 768px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+    .footer__icon::after{
+        width: 80%;
+    }
+
+}
+/* Standard Tablet (e.g., iPad) */
+@media (min-width:769px) and (max-width:810px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+    .footer__icon::after{
+        width: 80%;
+    }
+
+}
+/* Large Mobile (e.g., iPhone 16Pro Max) */
+@media only screen and (min-device-width: 430px) and (max-device-width: 450px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+    .footer__icon::after{
+        width: 90%;
+    }
+}
+/* Large Tablet (e.g., iPad Pro) */
+@media (min-width:811px) and (max-width:1024px){
+    .container{
+        padding: 2rem  0.6rem 2.8rem;
+    }
+
+}
 
