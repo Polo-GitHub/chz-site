@@ -266,8 +266,8 @@ img{
 .small__link-2 a{
     padding-top: 1rem;
 }
-.small__link-2 a:nth-child(3), 
-.small__link-2 a:nth-child(4){
+.small__link-2 li :nth-child(3), 
+.small__link-2 li :nth-child(4){
     text-decoration: none;
 }
 .home__icon{
