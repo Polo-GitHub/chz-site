@@ -143,7 +143,7 @@ img{
 }
 .show-btn{
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 1rem;
     background-color: transparent;
     color: var(--btn-color);
