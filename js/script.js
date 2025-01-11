@@ -2,52 +2,72 @@
 const toggleBtn = document.querySelector(".show-btn");
 const passInput = document.querySelector(".user-input");
 
-toggleBtn.addEventListener("click", ()=>{
-    if(passInput.type === "text"){
+toggleBtn.addEventListener("click", () => {
+    if (passInput.type === "text") {
         passInput.type = "password";
         toggleBtn.innerHTML = "Show"
     }
-    else{
+    else {
         passInput.type = "text"
         toggleBtn.innerHTML = "Hide"
     }
 
 });
-}
-// Form Validation
-const formBody = document.querySelector(".form__container");
-const userNameInput = document.querySelector(".user__input");
-const userNameErr = document.querySelector(".err__mssg");
-const userPasswordInput = document.querySelector(".user-input");
-const userPasswordErr = document.querySelector(".user__err");
-const labelUserError = document.querySelector(".user__label");
-const labelPasswdErr = document.querySelector(".user-label");
 
-// Show error message
-    function showError(element, elementError){
-    element.classList.add("error__border");
-    elementError.style.display = "block";   
-}
-// Clear error message
-    function clearError(element, elementError){
-    element.classList.remove("error__border");
-    elementError.style.display = "none";   
-}
+const formContainer = document.querySelector(".form__container");
+const passwordError = document.querySelector(".password__error");
+const usernameError = document.querySelector(".username__error");
+const mainErrorMsg = document.querySelector(".user__error-mssg");
+const usernameInput = document.querySelector("#username");
+const passwordInput = document.querySelector("#password");
+const usernameLabel = document.querySelector(".username__label");
+const passwordLabel = document.querySelector(".password__label");
+const yearSite = document.querySelector(".year");
 
-    formBody.addEventListener("submit", (event)=>{
-    event.preventDefault();
+yearSite.innerHTML = new Date().getFullYear()
 
-    if(userNameInput.value.trim() === ''){
-        showError(userNameInput, userNameErr)
-        userNameInput.style.borderColor = "#bf2155"
-        labelUserError.style.color = "#bf2155"
-       
+formContainer.onsubmit = function (e) {
+    e.preventDefault()
+
+
+    const username = usernameInput.value.trim()
+    const password = passInput.value.trim()
+    if (username === "" && password === "") {
+        mainErrorMsg.innerHTML = `<i class="fa-sharp fa-solid fa-circle-exclamation user-circle-exclamation">
+        </i>Please tell us your username and <span>password.</span>`
+        return
     }
-    if(userPasswordInput.value.trim() === ''){
-        showError(userPasswordInput, userPasswordErr)
-        userPasswordInput.style.borderColor = "#bf2155"
-        labelPasswdErr.style.color = "#bf2155"  
+    else if (username === "") {
+        usernameError.innerHTML = `<i class="fa-sharp fa-solid fa-circle-exclamation circle-exclamation">
+        </i>Please tell us your username.`
+        usernameInput.classList.add("input__errorline");
+        usernameLabel.classList.add("label__error")
+        return
     }
-});
+    else if (password === "") {
+        passwordError.innerHTML = `<i class="fa-sharp fa-solid fa-circle-exclamation circle-exclamation">
+        </i>Please tell us your password.`
+        passwordInput.classList.add("input__errorline");
+        passwordLabel.classList.add("label__error")
+        return
+    }
+
+}
+
+usernameInput.oninput = function () {
+    usernameError.innerHTML = ""
+    mainErrorMsg.innerHTML = ""
+    usernameInput.classList.remove("input__errorline");
+    usernameLabel.classList.remove("label__error")
+}
+passwordInput.oninput = function () {
+    passwordError.innerHTML = ""
+    mainErrorMsg.innerHTML = ""
+    passwordInput.classList.remove("input__errorline");
+    passwordLabel.classList.remove("label__error")
+}
+
+
+
   
 
